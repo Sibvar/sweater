@@ -105,7 +105,7 @@ public class MessageController {
         return "userMessages";
     }
 
-    @PostMapping("{user}")
+    @PostMapping("/user-messages/{user}")
     public String updateMessage(
             @AuthenticationPrincipal User currentUser,
             @PathVariable Long user,
